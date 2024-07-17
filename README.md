@@ -25,7 +25,7 @@ For a module that has the same functionality but runs as a data source instead (
 
 ```
 module "shell_resource_hello" {
-  source  = "Invicton-Labs/shell-resource/external"
+  source  = "git::https://github.com/sadok-f/terraform-external-shell-resource.git?ref=v0.5.0"
 
   // The command to run on resource creation on Unix machines
   command_unix         = "echo \"$TEXT $MORETEXT from $ORIGINAL_CREATED_TIME\""
